@@ -6,28 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>VSCode的各种环境配置 | Sunjuan&#39;s Blog</title>
+  <title>Archives: 2020 | Sunjuan&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="VSCode的安装和C++运行环境的配置 下载离线安装包：VSCode-win32-x64-1.41.1.zip 再解压 下载TDM-GCC，并安装，将其加入到环境变量中D:\TDM-GCC-64\bin; 自定义插件安装位置，新建一个文件夹存储插件 修改VSCode的快捷方式原本的目标 --extensions-dir &quot;新的存储位置&quot;&quot;D:\Program Fil">
-<meta property="og:type" content="article">
-<meta property="og:title" content="VSCode的各种环境配置">
-<meta property="og:url" content="http://yoursite.com/2018/07/31/VSCode/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Sunjuan&#39;s Blog">
+<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
 <meta property="og:site_name" content="Sunjuan&#39;s Blog">
-<meta property="og:description" content="VSCode的安装和C++运行环境的配置 下载离线安装包：VSCode-win32-x64-1.41.1.zip 再解压 下载TDM-GCC，并安装，将其加入到环境变量中D:\TDM-GCC-64\bin; 自定义插件安装位置，新建一个文件夹存储插件 修改VSCode的快捷方式原本的目标 --extensions-dir &quot;新的存储位置&quot;&quot;D:\Program Fil">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://yoursite.com/2018/07/31/VSCode/vscode_1.png">
-<meta property="og:image" content="http://yoursite.com/2018/07/31/VSCode/password.png">
-<meta property="og:image" content="http://yoursite.com/2018/07/31/VSCode/rsa.png">
-<meta property="og:image" content="http://yoursite.com/2018/07/31/VSCode/remote_1.png">
-<meta property="og:image" content="http://yoursite.com/2018/07/31/VSCode/remote_2.png">
-<meta property="og:image" content="http://yoursite.com/2018/07/31/VSCode/remote_3.png">
-<meta property="og:image" content="http://yoursite.com/2018/07/31/VSCode/remote_4.png">
-<meta property="article:published_time" content="2018-07-31T07:58:17.000Z">
-<meta property="article:modified_time" content="2020-01-04T11:47:14.168Z">
 <meta property="article:author" content="Juan Sun">
-<meta property="article:tag" content="经验">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2018/07/31/VSCode/vscode_1.png">
   
     <link rel="alternative" href="/atom.xml" title="Sunjuan&#39;s Blog" type="application/atom+xml">
   
@@ -169,99 +156,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-VSCode" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      VSCode的各种环境配置
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/08/04/LaTex/" class="archive-article-date">
+  	<time datetime="2020-08-04T04:36:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-04</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/08/04/LaTex/">LaTex从入门到精通</a>
     </h1>
   
 
-        
-        <a href="/2018/07/31/VSCode/" class="archive-article-date">
-  	<time datetime="2018-07-31T07:58:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="VSCode的安装和C-运行环境的配置"><a href="#VSCode的安装和C-运行环境的配置" class="headerlink" title="VSCode的安装和C++运行环境的配置"></a>VSCode的安装和C++运行环境的配置</h3><ol>
-<li>下载离线安装包：VSCode-win32-x64-1.41.1.zip 再解压</li>
-<li>下载TDM-GCC，并安装，将其加入到环境变量中D:\TDM-GCC-64\bin;</li>
-<li>自定义插件安装位置，新建一个文件夹存储插件</li>
-<li>修改VSCode的快捷方式<br><code>原本的目标 --extensions-dir &quot;新的存储位置&quot;</code><br><code>&quot;D:\Program Files\Microsoft VS Code\Code.exe&quot; --extensions-dir &quot;D:\Program Files\Microsoft VS Code\extensions&quot;</code></li>
-<li>下载和C、C++有关的插件<br><img src="/2018/07/31/VSCode/vscode_1.png" alt="C++插件"></li>
-<li>新建一个C++项目文件</li>
-<li>项目文件夹下新建.vscode文件夹</li>
-<li>向文件夹中添加lauch.json和tasks.json文件</li>
-<li>运行Debug</li>
-</ol>
-<h3 id="VSCode运行远程开发目录"><a href="#VSCode运行远程开发目录" class="headerlink" title="VSCode运行远程开发目录"></a>VSCode运行远程开发目录</h3><ol>
-<li>设置Windows下免密登录<blockquote>
-<ul>
-<li>安装SSH软件</li>
-<li><img src="/2018/07/31/VSCode/password.png" alt="passward"></li>
-<li>Windows的DOS下输入：ssh-keygen。一直回车<br><img src="/2018/07/31/VSCode/rsa.png" alt="ssh-gen"></li>
-<li>将C:\Users\用户名.ssh目录下的公钥id_rsa.pub拷贝到服务器</li>
-<li>服务器中输入:cat id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</li>
-</ul>
-</blockquote>
-</li>
-<li>VSCode的Extension中安装Remote Development</li>
-<li>VSCode中配置远程连接<blockquote>
-<ul>
-<li>编辑连接名称<br><img src="/2018/07/31/VSCode/remote_1.png" alt="connetion"></li>
-<li>选择配置文件<br><img src="/2018/07/31/VSCode/remote_2.png" alt="config"></li>
-</ul>
-</blockquote>
-</li>
-<li>编辑配置文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Host aliyun_lcq</span><br><span class="line">  HostName 120.77.86.214</span><br><span class="line">  User root</span><br><span class="line">  Port 22</span><br><span class="line">Host 114</span><br><span class="line">  HostName 10.64.68.114</span><br><span class="line">  User slf</span><br><span class="line">  Port 22</span><br></pre></td></tr></table></figure></li>
-<li>打开服务器上的文件夹<br><img src="/2018/07/31/VSCode/remote_3.png" alt="remote"><br><img src="/2018/07/31/VSCode/remote_4.png" alt="remote"></li>
-<li>编辑服务器上的文件直接保存就可以上传至服务器</li>
-</ol>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>写博不易, 感谢支持<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/imgs/alipay.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/imgs/wx.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -273,115 +197,46 @@
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/31/VSCode/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
   
-<nav id="article-nav">
-  
-    <a href="/2018/08/01/BlogBeauty/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          博客美化
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2018/07/30/NODEJS_Tip1/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">显示文件夹的目录结构</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/01/04/Content/" class="archive-article-date">
+  	<time datetime="2020-01-04T09:07:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-04</time>
+</a>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
+    	 
   
-  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/01/04/Content/">网站内部博客索引</a>
+    </h1>
   
 
+        <div class="article-info info-on-right">
+          
+          
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+  
+    </div></section>
   
 
-  
-
-  
+    
 
 
           </div>
@@ -405,8 +260,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
