@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018/7 | Sunjuan&#39;s Blog</title>
+  <title>Vim | Sunjuan&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Sunjuan&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2018/07/index.html">
+  <meta name="description" content="Vim使用前言 Vim是Linux系统下的编辑器 Vim适用于Linux用户，后端程序员，运维程序员初识Vim Linux&#x2F;Unix系统下本身就安装有Vim，Windows下可以安装Gvim Linux终端下输入vim，显示如下。:q退出vimVim的四种模式介绍Linux下输入vim 1.txt，进入1.txt可以进入normal模式 normal模式，即标准模式。只能对文件进行浏览   esc">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vim">
+<meta property="og:url" content="http://yoursite.com/2020/02/28/LearningTools-Vim/index.html">
 <meta property="og:site_name" content="Sunjuan&#39;s Blog">
+<meta property="og:description" content="Vim使用前言 Vim是Linux系统下的编辑器 Vim适用于Linux用户，后端程序员，运维程序员初识Vim Linux&#x2F;Unix系统下本身就安装有Vim，Windows下可以安装Gvim Linux终端下输入vim，显示如下。:q退出vimVim的四种模式介绍Linux下输入vim 1.txt，进入1.txt可以进入normal模式 normal模式，即标准模式。只能对文件进行浏览   esc">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/02/28/LearningTools-Vim/vim_1.jpg">
+<meta property="article:published_time" content="2020-02-28T12:19:20.000Z">
+<meta property="article:modified_time" content="2020-03-01T14:33:20.525Z">
 <meta property="article:author" content="Juan Sun">
+<meta property="article:tag" content="经验">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/02/28/LearningTools-Vim/vim_1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Sunjuan&#39;s Blog" type="application/atom+xml">
   
@@ -150,36 +157,274 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-LearningTools-Vim" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Vim
+    </h1>
+  
+
+        
+        <a href="/2020/02/28/LearningTools-Vim/" class="archive-article-date">
+  	<time datetime="2020-02-28T12:19:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-28</time>
+</a>
+        <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">2.3k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">8分</span>
+      </span>
+    </span>
+</div>
+          
+        <!-- 添加完成 -->
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Vim使用前言"><a href="#Vim使用前言" class="headerlink" title="Vim使用前言"></a>Vim使用前言</h2><ul>
+<li>Vim是Linux系统下的编辑器</li>
+<li>Vim适用于Linux用户，后端程序员，运维程序员<h2 id="初识Vim"><a href="#初识Vim" class="headerlink" title="初识Vim"></a>初识Vim</h2></li>
+<li>Linux/Unix系统下本身就安装有Vim，Windows下可以安装Gvim</li>
+<li>Linux终端下输入vim，显示如下。:q退出vim<br><img src="/2020/02/28/LearningTools-Vim/vim_1.jpg" alt="VIM"><h4 id="Vim的四种模式介绍"><a href="#Vim的四种模式介绍" class="headerlink" title="Vim的四种模式介绍"></a>Vim的四种模式介绍</h4>Linux下输入vim 1.txt，进入1.txt可以进入normal模式<blockquote>
+<p>normal模式，即标准模式。只能对文件进行浏览</p>
+</blockquote>
+</li>
+<li>esc: 退出插其他模式，进入normal模式</li>
+<li>h: 左移光标</li>
+<li>l: 右移光标<blockquote>
+<p>编辑模式。在normal模式下按对应字母，进入对应的状态</p>
+</blockquote>
+</li>
+<li>a : append模式, 在当前光标后面追加内容</li>
+<li>i : insert模式, 在当前光标前面插入内容</li>
+<li>o : open in a line below, 在当前光标下面空一行插入内容</li>
+<li>A : 光标跳到当前行最后一位置</li>
+<li>I : 光标跳到当前行最前一位置</li>
+<li>O : append a line above, 在当前光标上面空一行插入内容 <blockquote>
+<p>命令模式。在normal模式下按对应字母，进入对应的状态</p>
+</blockquote>
+</li>
+<li>:w : 保存</li>
+<li>:q : 退出, 退出编辑，退出分屏等等</li>
+<li>:wq : write and quit, 保存并退出</li>
+<li>:vs : vertical split，竖分屏</li>
+<li>:sp : split, 横分屏</li>
+<li>:set nu: set number, 设置行号<blockquote>
+<p>可视化(Visual,v)模式。在normal模式下按对应字母，进入对应的状态</p>
+</blockquote>
+</li>
+<li>v: 进入visual选择</li>
+<li>V: 进入行选择</li>
+<li>Ctrl+v: 进入块选择</li>
+<li>d: 批量删除<h4 id="插入模式小技巧"><a href="#插入模式小技巧" class="headerlink" title="插入模式小技巧"></a>插入模式小技巧</h4><blockquote>
+<p>快捷键说明，编辑Txt的时候，同时适用于在终端下编辑命令时</p>
+</blockquote>
+</li>
+<li>ctrl+h: 删除上一个字符</li>
+<li>ctrl+w: 删除上一个单词</li>
+<li>ctrl+u: 删除当前所在行<blockquote>
+<p>在终端下编辑命令时</p>
+</blockquote>
+</li>
+<li>ctrl+a: 快速移动到开头</li>
+<li>ctrl+e: 快速移动在结尾</li>
+<li>ctrl+b: 光标往前移动一个字符</li>
+<li>ctrl+f: 光标往后移动一个字符<blockquote>
+<p>快速切换normal模式和插入模式</p>
+</blockquote>
+</li>
+<li>ctrl+c或ctrl+[: 快速从插入模式切换到normal模式</li>
+<li>gi: 快速从normal模式切换到插入模式并且光标转到最后一次编辑的地方</li>
+<li>映射方式：快速从normal模式切换到插入模式，替换Esc键<h4 id="Vim的快速移动-normal模式"><a href="#Vim的快速移动-normal模式" class="headerlink" title="Vim的快速移动(normal模式)"></a>Vim的快速移动(normal模式)</h4><blockquote>
+<p>Vim的字符间快速移动的键位</p>
+</blockquote>
+</li>
+<li>H(z左)J(下)K(上)L(右)<blockquote>
+<p>Vim的单词间快速移动</p>
+</blockquote>
+</li>
+<li>w/W: 移动到下一个word/WORD开头(word是指以非空白符分割的单词，WORD是指以空白符分割的的单词)</li>
+<li>e/E: 移动到下一个word/WORD结尾</li>
+<li>b/B: 回移到上一个word/WORD开头<blockquote>
+<p>行内搜索移动</p>
+</blockquote>
+</li>
+<li>f{char}: 左(正)向搜索，移动到char字符上，使用;/,继续搜索</li>
+<li>t{char}: 左(正)向搜索，移动到char字符的上一个字符，使用;/,继续搜索</li>
+<li>F{char}: 右(反)向搜索，移动到char字符上，使用;/,继续搜索</li>
+<li>T{char}: 右(反)向搜索，移动到char字符的上一个字符，使用;/,继续搜索<blockquote>
+<p>水平移动：在一行上进行移动</p>
+</blockquote>
+</li>
+<li>0: 移动到该行首端的第一个字符</li>
+<li>^: 移动到该行的第一个非空白字符</li>
+<li>$: 移动到该行的尾部</li>
+<li>g_: 移动到行位的非空白字符<blockquote>
+<p>垂直移动：在句子和段落之间进行移动</p>
+</blockquote>
+</li>
+<li>(): 在句子之间移动</li>
+<li>{}: 在段落之间移动</li>
+<li>easymotion插件移动<blockquote>
+<p>页面移动</p>
+</blockquote>
+</li>
+<li>gg/G: 移动到文件开头，ctrl+o快速返回</li>
+<li>H(head) M(middle) L(Lower)：分别跳转到屏幕的开头、中间和结尾</li>
+<li>ctrl+u: 向上翻页</li>
+<li>ctrl+f: 向下翻页</li>
+<li>zz: 把光标所在行放在屏幕中间<h4 id="Vim快速的增删改查-normal模式"><a href="#Vim快速的增删改查-normal模式" class="headerlink" title="Vim快速的增删改查(normal模式)"></a>Vim快速的增删改查(normal模式)</h4></li>
+<li>a/i/o: 增加</li>
+<li>x: normal模式下快速向后删除一个字符</li>
+<li>d: 配合文本对象快速删除一个单词，用法如下：</li>
+<li>daw: 删除一个单词，包括左右的空格</li>
+<li>diw: 删除一个单词，不包括周围的空格</li>
+<li>dd: 删除当前行</li>
+<li>dt{char}: delete to char，删除直到char字符的内容</li>
+<li>d0: 快速删除到行头</li>
+<li>d$: 快速删除到行尾</li>
+<li>x/d: 搭配数字执行多次删除</li>
+<li>2x: 删除两个字符</li>
+<li>3dd: 删除三行</li>
+<li>u: 恢复操作</li>
+<li>r(replace): r{char},用char替换当前内容</li>
+<li>c(change): 配合文本对象，进行快速修改</li>
+<li>s(substitute): 替换并进入插入模式</li>
+<li>S: 删除整行</li>
+<li>ct”: 删除整个内容到双引号</li>
+<li>/: 前向搜索</li>
+<li>?: 反向搜索</li>
+<li>n: 跳转到下一个匹配</li>
+<li>N: 跳转到上一个匹配</li>
+<li>*: 进行当前单词的前向匹配</li>
+<li>#: 进行当前档次的后向匹配</li>
+<li>:set hls: highlight search, 搜索结果高亮显示</li>
+<li>: set incsearch: 边搜索边高亮<h4 id="Vim的搜索替换"><a href="#Vim的搜索替换" class="headerlink" title="Vim的搜索替换"></a>Vim的搜索替换</h4></li>
+<li>substitute命令，可以允许我们查找并且替换文本，支持正则表达式</li>
+<li>:[range] s[ubstitute]/{pattern}/{string}/[flags]</li>
+<li>range: 表示范围，如10,20表示10-20行，%表示全部。% s/self/this/g</li>
+<li>pattern: 表示替换的模式，正则表达式</li>
+<li>string: 替换后的文本</li>
+<li>flags: g(global)表示全局范围内执行；c(confirm)表示确认，可以确认或者拒绝修改；n(number)表示查询匹配的次数但是不替换</li>
+<li>正则表达式： % s/&lt;function&gt;/fun/g, 用func替换单独的function，不替换包括单词中含有function的内容，比如def_function这种</li>
+</ul>
+<h4 id="Vim多文件操作"><a href="#Vim多文件操作" class="headerlink" title="Vim多文件操作"></a>Vim多文件操作</h4><ul>
+<li>Buffer: 缓冲区，Vim打开每一个文件都会将文件内容加载到缓冲区，之后的修改是针对内存中的缓冲区进行修改，不直接保存到文件，执行:w(write)后才会将修改内容写入到文件</li>
+<li>:ls // 列举当前缓冲区</li>
+<li>:b n // 跳转到第n个缓冲区</li>
+<li>:bpre // 跳转到上一个缓冲区</li>
+<li>:bnext // 跳转到下一个缓冲区</li>
+<li>:bfirst // 跳转到第一个缓冲区</li>
+<li>:blast // 跳转到最后一个缓冲区</li>
+<li>:b buffername // 用tab补全来跳转缓冲区</li>
+<li>:e ./a.txt // 打开某个缓冲区后在normal模式下打开另一个文件加载到缓冲区</li>
+<li>窗口Windows: 可视化的分割区域；一个缓冲区可以分割成多个窗口，每个窗口也可以打开不同的缓冲区</li>
+<li>ctrl+w+s: 水平分割</li>
+<li>ctrl+w+v: 垂直分割</li>
+<li>ctrl+w+w: 窗口循环切换</li>
+<li>ctrl+w+h: 光标切换至左边窗口</li>
+<li>ctrl+w+j: 光标切换至下边窗口</li>
+<li>ctrl+w+k: 光标切换至上边窗口</li>
+<li>ctrl+w+l: 光标切换至右边窗口</li>
+<li>在不同的窗口编辑同一个buffer，则每一个buffer都会同时被修改</li>
+<li>ctrl+w+H: 当前缓冲区至切换左边窗口</li>
+<li>ctrl+w+J: 当前缓冲区至切换下边窗口</li>
+<li>ctrl+w+K: 当前缓冲区至切换上边窗口</li>
+<li>ctrl+w+L: 当前缓冲区至切换右边窗口</li>
+<li>Tab标签页将窗口分组(不常用)，容纳一系列窗口</li>
+<li>:tabe[dit] file: 在新的标签页中打开file</li>
+<li>ctrl+w+t: 将当前窗口移动到一个新的标签页</li>
+<li>:tabc[close]: 关闭当前标签页以及其中的所有窗口</li>
+<li>:tabo[nly]: 只保留活动标签页，关闭其他所有标签页</li>
+<li>:tabn[ext] n: 切换到编号为n的标签页</li>
+<li>:tabn[ext]: 切换到下一个标签页</li>
+<li>:tabp[re]: 切换到上一个标签页</li>
+<li>:tabnew file：在新的标签页中打开file</li>
+</ul>
+<h4 id="Vim的文本对象Text-Object"><a href="#Vim的文本对象Text-Object" class="headerlink" title="Vim的文本对象Text Object"></a>Vim的文本对象Text Object</h4><ul>
+<li>文本对象操作方式: [number]<command>[text object]</li>
+<li>number 表示次数，command是命令，d(elete),c(hange),y(ank)，text object操作的文本对象，单词w,居中s,段落p</li>
+<li>normal模式下的复制y(ank)粘贴p(ut)，可以配合文本对象使用</li>
+<li>insert模式下的复制粘贴,:set paste后使用ctrl+c和ctrl+v，:set nopaste恢复</li>
+<li>Vim的寄存器：Vim里操作的是寄存器而不是系统的剪贴板，使用d删除和y复制的内容都在某个寄存器中，x删除一个字符放到某个寄存器中，然后p粘贴。</li>
+<li>“{reg}指定寄存器: “ayiw复制一个单词到寄存器a中，”bdd复制一行到寄存器b</li>
+<li>有名寄存器: a-z</li>
+<li>复制专用寄存器: 0</li>
+<li>系统剪贴板: +</li>
+<li>“%: 当前文件名</li>
+<li>“.: 删词插入的文本</li>
+<li>:echo has(‘clipborad’) 输出为1表示支持系统剪贴板</li>
+</ul>
+<h4 id="Vim的宏"><a href="#Vim的宏" class="headerlink" title="Vim的宏"></a>Vim的宏</h4><ul>
+<li>q: 开始录制宏和结束录制宏</li>
+<li>q{register}: 选择要保存的寄存器，将录制的命令保存其中</li>
+<li>@{register}: 回放寄存器中保存的一系列命令</li>
+<li>每一行加上双引号:方式一， qa 开始录制并保存到a，q退出录制，@a在每一行回放；进入visual模式执行normal模式下的命令G，:normal @a，则在所有行添加了双引号；方式二，normal I”, normal A”</li>
+</ul>
+<h4 id="Vim的补全，2-8原则，度娘具体了解Vim的补全快捷键"><a href="#Vim的补全，2-8原则，度娘具体了解Vim的补全快捷键" class="headerlink" title="Vim的补全，2-8原则，度娘具体了解Vim的补全快捷键"></a>Vim的补全，2-8原则，度娘具体了解Vim的补全快捷键</h4><h4 id="Vim的配色修改"><a href="#Vim的配色修改" class="headerlink" title="Vim的配色修改"></a>Vim的配色修改</h4><ul>
+<li>vim a.txt b.py -o : 在两个窗口中打开a和b两个文件</li>
+<li>:colorscheme(可tab补全)，显示default</li>
+<li>:colorscheme A: 更改当前主题为名为A的主题</li>
+<li>从网上下载配色主题，主题的github仓库具体的教程</li>
+</ul>
+<h2 id="个性化Vim，自定义Vim"><a href="#个性化Vim，自定义Vim" class="headerlink" title="个性化Vim，自定义Vim"></a>个性化Vim，自定义Vim</h2><h2 id="Vim插件的安装和使用"><a href="#Vim插件的安装和使用" class="headerlink" title="Vim插件的安装和使用"></a>Vim插件的安装和使用</h2>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>写博不易, 感谢支持<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/imgs/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/imgs/wx.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/31/VSCode/" class="archive-article-date">
-  	<time datetime="2018-07-31T07:58:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/31/VSCode/">VSCode的各种环境配置</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,122 +436,129 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/28/LearningTools-Vim/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix">
+      </div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/30/NODEJS_Tip1/" class="archive-article-date">
-  	<time datetime="2018-07-30T07:58:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-30</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/03/14/Cplusplus-1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          内存分区和引用
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/01/04/Content/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">网站内部博客索引</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/30/NODEJS_Tip1/">显示文件夹的目录结构</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">经验</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Vim使用前言"><span class="toc-number">1.</span> <span class="toc-text">Vim使用前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#初识Vim"><span class="toc-number">2.</span> <span class="toc-text">初识Vim</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Vim的四种模式介绍"><span class="toc-number">2.0.1.</span> <span class="toc-text">Vim的四种模式介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#插入模式小技巧"><span class="toc-number">2.0.2.</span> <span class="toc-text">插入模式小技巧</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vim的快速移动-normal模式"><span class="toc-number">2.0.3.</span> <span class="toc-text">Vim的快速移动(normal模式)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vim快速的增删改查-normal模式"><span class="toc-number">2.0.4.</span> <span class="toc-text">Vim快速的增删改查(normal模式)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vim的搜索替换"><span class="toc-number">2.0.5.</span> <span class="toc-text">Vim的搜索替换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vim多文件操作"><span class="toc-number">2.0.6.</span> <span class="toc-text">Vim多文件操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vim的文本对象Text-Object"><span class="toc-number">2.0.7.</span> <span class="toc-text">Vim的文本对象Text Object</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vim的宏"><span class="toc-number">2.0.8.</span> <span class="toc-text">Vim的宏</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vim的补全，2-8原则，度娘具体了解Vim的补全快捷键"><span class="toc-number">2.0.9.</span> <span class="toc-text">Vim的补全，2-8原则，度娘具体了解Vim的补全快捷键</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vim的配色修改"><span class="toc-number">2.0.10.</span> <span class="toc-text">Vim的配色修改</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#个性化Vim，自定义Vim"><span class="toc-number">3.</span> <span class="toc-text">个性化Vim，自定义Vim</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vim插件的安装和使用"><span class="toc-number">4.</span> <span class="toc-text">Vim插件的安装和使用</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/29/BlogChange/" class="archive-article-date">
-  	<time datetime="2018-07-29T07:58:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-29</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/29/BlogChange/">博客进阶</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">经验</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/28/BlogGenerate/" class="archive-article-date">
-  	<time datetime="2018-07-28T07:58:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/28/BlogGenerate/">在CentOS上从零开始搭建博客</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -359,8 +611,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
